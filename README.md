@@ -110,8 +110,9 @@ Each module is accompanied by the `"info"` block providing all required informat
 Examples and an example output can be found in the `./examples` directory.
 
 ## Issues
-1. Currently, the latency of higher-level modules in the nested structure of PyTorch is computed from the summation of its sub-modules. This does not consider any low-level parallelization and the asynchronous behaviour of the Cuda-backend which results in greatly over-estimated latencies especially for high-level modules and modules with many sub-modules.
+1. The latency and additional memory is not correctly computed for higher level modules. Only for the lowest level modules that allocate the given memory.
 2. The current output format is somewhat confusing and might require some better output format.
+3. The standard python json parser is highly inefficient and results in slow saving of the results for larger models. We will switch to the package `orjson` in the future.
 ## License
 `torch_inspector` is licensed under BSD-3.
 ## Author
