@@ -1,0 +1,2851 @@
+{
+    "ResNet": {
+        "info": {
+            "type": "ResNet",
+            "input_shapes": [],
+            "output_shapes": [],
+            "grad_in_shape": [],
+            "grad_out_shape": [],
+            "num_parameters": 11689512,
+            "num_learnable_parameters": 11689512,
+            "param_memory_usage": 46.758048,
+            "gradient_memory_usage": 46.758048,
+            "input_memory_usage": [],
+            "output_memory_usage": [],
+            "effective_additional_memory_fwd": 2770.86208,
+            "effective_additional_memory_bwd": 6839.33696,
+            "forward_nan": false,
+            "grad_in_nan": false,
+            "grad_out_nan": false,
+            "total_memory": 93.516096,
+            "forward_latency": 2795.846462249756,
+            "backward_latency": 8200.173377990723
+        },
+        "children": {
+            "conv1": {
+                "info": {
+                    "type": "Conv2d",
+                    "input_shapes": [
+                        [
+                            1,
+                            3,
+                            224,
+                            224
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            64,
+                            112,
+                            112
+                        ]
+                    ],
+                    "grad_in_shape": [],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            64,
+                            112,
+                            112
+                        ]
+                    ],
+                    "num_parameters": 9408,
+                    "num_learnable_parameters": 9408,
+                    "param_memory_usage": 0.037632,
+                    "gradient_memory_usage": 0.037632,
+                    "input_memory_usage": [
+                        0.602112
+                    ],
+                    "output_memory_usage": [
+                        3.211264
+                    ],
+                    "effective_additional_memory_fwd": 13.369344,
+                    "effective_additional_memory_bwd": 0.0,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 0.677376,
+                    "forward_latency": 3.809213638305664,
+                    "backward_latency": 1.4483928680419922
+                },
+                "children": {}
+            },
+            "bn1": {
+                "info": {
+                    "type": "BatchNorm2d",
+                    "input_shapes": [],
+                    "output_shapes": [],
+                    "grad_in_shape": [],
+                    "grad_out_shape": [],
+                    "num_parameters": 128,
+                    "num_learnable_parameters": 128,
+                    "param_memory_usage": 0.000512,
+                    "gradient_memory_usage": 0.000512,
+                    "input_memory_usage": [],
+                    "output_memory_usage": [],
+                    "effective_additional_memory_fwd": 0.0,
+                    "effective_additional_memory_bwd": 0.0,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 0.001024,
+                    "forward_latency": 0.0,
+                    "backward_latency": 0.0
+                },
+                "children": {}
+            },
+            "relu": {
+                "info": {
+                    "type": "ReLU",
+                    "input_shapes": [],
+                    "output_shapes": [],
+                    "grad_in_shape": [],
+                    "grad_out_shape": [],
+                    "num_parameters": 0,
+                    "num_learnable_parameters": 0,
+                    "param_memory_usage": 0.0,
+                    "gradient_memory_usage": 0.0,
+                    "input_memory_usage": [],
+                    "output_memory_usage": [],
+                    "effective_additional_memory_fwd": 0.0,
+                    "effective_additional_memory_bwd": 0.0,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 0.0,
+                    "forward_latency": 0.0,
+                    "backward_latency": 0.0
+                },
+                "children": {}
+            },
+            "maxpool": {
+                "info": {
+                    "type": "MaxPool2d",
+                    "input_shapes": [
+                        [
+                            1,
+                            64,
+                            112,
+                            112
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "grad_in_shape": [
+                        [
+                            1,
+                            64,
+                            112,
+                            112
+                        ]
+                    ],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "num_parameters": 0,
+                    "num_learnable_parameters": 0,
+                    "param_memory_usage": 0.0,
+                    "gradient_memory_usage": 0.0,
+                    "input_memory_usage": [
+                        3.211264
+                    ],
+                    "output_memory_usage": [
+                        0.802816
+                    ],
+                    "effective_additional_memory_fwd": 6.422528,
+                    "effective_additional_memory_bwd": 0.0,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 3.211264,
+                    "forward_latency": 2.4564266204833984,
+                    "backward_latency": 1.3415813446044922
+                },
+                "children": {}
+            },
+            "layer1": {
+                "info": {
+                    "type": "Sequential",
+                    "input_shapes": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "grad_in_shape": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "num_parameters": 147968,
+                    "num_learnable_parameters": 147968,
+                    "param_memory_usage": 0.591872,
+                    "gradient_memory_usage": 0.591872,
+                    "input_memory_usage": [
+                        0.802816
+                    ],
+                    "output_memory_usage": [
+                        0.802816
+                    ],
+                    "effective_additional_memory_fwd": 74.71104,
+                    "effective_additional_memory_bwd": 1.31072,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 1.98656,
+                    "forward_latency": 52.547454833984375,
+                    "backward_latency": 129.2109489440918
+                },
+                "children": {
+                    "0": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "num_parameters": 73984,
+                            "num_learnable_parameters": 73984,
+                            "param_memory_usage": 0.295936,
+                            "gradient_memory_usage": 0.295936,
+                            "input_memory_usage": [
+                                0.802816
+                            ],
+                            "output_memory_usage": [
+                                0.802816
+                            ],
+                            "effective_additional_memory_fwd": 17.03936,
+                            "effective_additional_memory_bwd": 0.0,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 1.394688,
+                            "forward_latency": 14.965534210205078,
+                            "backward_latency": 29.104948043823242
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "num_parameters": 36864,
+                                    "num_learnable_parameters": 36864,
+                                    "param_memory_usage": 0.147456,
+                                    "gradient_memory_usage": 0.147456,
+                                    "input_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "output_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "effective_additional_memory_fwd": 1.048576,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.097728,
+                                    "forward_latency": 1.6837120056152344,
+                                    "backward_latency": 2.900362014770508
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 128,
+                                    "num_learnable_parameters": 128,
+                                    "param_memory_usage": 0.000512,
+                                    "gradient_memory_usage": 0.000512,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.001024,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "num_parameters": 36864,
+                                    "num_learnable_parameters": 36864,
+                                    "param_memory_usage": 0.147456,
+                                    "gradient_memory_usage": 0.147456,
+                                    "input_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "output_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "effective_additional_memory_fwd": 2.359296,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.097728,
+                                    "forward_latency": 1.3093948364257812,
+                                    "backward_latency": 2.9206275939941406
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 128,
+                                    "num_learnable_parameters": 128,
+                                    "param_memory_usage": 0.000512,
+                                    "gradient_memory_usage": 0.000512,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.001024,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            }
+                        }
+                    },
+                    "1": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "num_parameters": 73984,
+                            "num_learnable_parameters": 73984,
+                            "param_memory_usage": 0.295936,
+                            "gradient_memory_usage": 0.295936,
+                            "input_memory_usage": [
+                                0.802816
+                            ],
+                            "output_memory_usage": [
+                                0.802816
+                            ],
+                            "effective_additional_memory_fwd": 20.31616,
+                            "effective_additional_memory_bwd": 0.65536,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 1.394688,
+                            "forward_latency": 11.30819320678711,
+                            "backward_latency": 35.500526428222656
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "num_parameters": 36864,
+                                    "num_learnable_parameters": 36864,
+                                    "param_memory_usage": 0.147456,
+                                    "gradient_memory_usage": 0.147456,
+                                    "input_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "output_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "effective_additional_memory_fwd": 2.359296,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.097728,
+                                    "forward_latency": 1.0907649993896484,
+                                    "backward_latency": 2.8564929962158203
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 128,
+                                    "num_learnable_parameters": 128,
+                                    "param_memory_usage": 0.000512,
+                                    "gradient_memory_usage": 0.000512,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.001024,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "num_parameters": 36864,
+                                    "num_learnable_parameters": 36864,
+                                    "param_memory_usage": 0.147456,
+                                    "gradient_memory_usage": 0.147456,
+                                    "input_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "output_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "effective_additional_memory_fwd": 1.703936,
+                                    "effective_additional_memory_bwd": 0.131072,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.097728,
+                                    "forward_latency": 1.1708736419677734,
+                                    "backward_latency": 4.243612289428711
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 128,
+                                    "num_learnable_parameters": 128,
+                                    "param_memory_usage": 0.000512,
+                                    "gradient_memory_usage": 0.000512,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.001024,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "layer2": {
+                "info": {
+                    "type": "Sequential",
+                    "input_shapes": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            128,
+                            28,
+                            28
+                        ]
+                    ],
+                    "grad_in_shape": [
+                        [
+                            1,
+                            64,
+                            56,
+                            56
+                        ]
+                    ],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            128,
+                            28,
+                            28
+                        ]
+                    ],
+                    "num_parameters": 525568,
+                    "num_learnable_parameters": 525568,
+                    "param_memory_usage": 2.102272,
+                    "gradient_memory_usage": 2.102272,
+                    "input_memory_usage": [
+                        0.802816
+                    ],
+                    "output_memory_usage": [
+                        0.401408
+                    ],
+                    "effective_additional_memory_fwd": 54.001664,
+                    "effective_additional_memory_bwd": 3.145728,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 5.00736,
+                    "forward_latency": 66.87211990356445,
+                    "backward_latency": 188.07315826416016
+                },
+                "children": {
+                    "0": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    64,
+                                    56,
+                                    56
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "num_parameters": 230144,
+                            "num_learnable_parameters": 230144,
+                            "param_memory_usage": 0.920576,
+                            "gradient_memory_usage": 0.920576,
+                            "input_memory_usage": [
+                                0.802816
+                            ],
+                            "output_memory_usage": [
+                                0.401408
+                            ],
+                            "effective_additional_memory_fwd": 24.379392,
+                            "effective_additional_memory_bwd": 1.572864,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 2.643968,
+                            "forward_latency": 23.46181869506836,
+                            "backward_latency": 66.68758392333984
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "num_parameters": 73728,
+                                    "num_learnable_parameters": 73728,
+                                    "param_memory_usage": 0.294912,
+                                    "gradient_memory_usage": 0.294912,
+                                    "input_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "output_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.39264,
+                                    "forward_latency": 0.9524822235107422,
+                                    "backward_latency": 3.517627716064453
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 256,
+                                    "num_learnable_parameters": 256,
+                                    "param_memory_usage": 0.001024,
+                                    "gradient_memory_usage": 0.001024,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.002048,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "num_parameters": 147456,
+                                    "num_learnable_parameters": 147456,
+                                    "param_memory_usage": 0.589824,
+                                    "gradient_memory_usage": 0.589824,
+                                    "input_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "output_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "effective_additional_memory_fwd": 0.131072,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.581056,
+                                    "forward_latency": 1.1768341064453125,
+                                    "backward_latency": 2.5849342346191406
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 256,
+                                    "num_learnable_parameters": 256,
+                                    "param_memory_usage": 0.001024,
+                                    "gradient_memory_usage": 0.001024,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.002048,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "downsample": {
+                                "info": {
+                                    "type": "Sequential",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            64,
+                                            56,
+                                            56
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "num_parameters": 8448,
+                                    "num_learnable_parameters": 8448,
+                                    "param_memory_usage": 0.033792,
+                                    "gradient_memory_usage": 0.033792,
+                                    "input_memory_usage": [
+                                        0.802816
+                                    ],
+                                    "output_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "effective_additional_memory_fwd": 3.93216,
+                                    "effective_additional_memory_bwd": 0.262144,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.8704,
+                                    "forward_latency": 1.7809867858886719,
+                                    "backward_latency": 5.012035369873047
+                                },
+                                "children": {
+                                    "0": {
+                                        "info": {
+                                            "type": "Conv2d",
+                                            "input_shapes": [
+                                                [
+                                                    1,
+                                                    64,
+                                                    56,
+                                                    56
+                                                ]
+                                            ],
+                                            "output_shapes": [
+                                                [
+                                                    1,
+                                                    128,
+                                                    28,
+                                                    28
+                                                ]
+                                            ],
+                                            "grad_in_shape": [
+                                                [
+                                                    1,
+                                                    64,
+                                                    56,
+                                                    56
+                                                ]
+                                            ],
+                                            "grad_out_shape": [
+                                                [
+                                                    1,
+                                                    128,
+                                                    28,
+                                                    28
+                                                ]
+                                            ],
+                                            "num_parameters": 8192,
+                                            "num_learnable_parameters": 8192,
+                                            "param_memory_usage": 0.032768,
+                                            "gradient_memory_usage": 0.032768,
+                                            "input_memory_usage": [
+                                                0.802816
+                                            ],
+                                            "output_memory_usage": [
+                                                0.401408
+                                            ],
+                                            "effective_additional_memory_fwd": 1.96608,
+                                            "effective_additional_memory_bwd": 0.131072,
+                                            "forward_nan": false,
+                                            "grad_in_nan": false,
+                                            "grad_out_nan": false,
+                                            "total_memory": 0.868352,
+                                            "forward_latency": 0.8904933929443359,
+                                            "backward_latency": 2.5060176849365234
+                                        },
+                                        "children": {}
+                                    },
+                                    "1": {
+                                        "info": {
+                                            "type": "BatchNorm2d",
+                                            "input_shapes": [],
+                                            "output_shapes": [],
+                                            "grad_in_shape": [],
+                                            "grad_out_shape": [],
+                                            "num_parameters": 256,
+                                            "num_learnable_parameters": 256,
+                                            "param_memory_usage": 0.001024,
+                                            "gradient_memory_usage": 0.001024,
+                                            "input_memory_usage": [],
+                                            "output_memory_usage": [],
+                                            "effective_additional_memory_fwd": 0.0,
+                                            "effective_additional_memory_bwd": 0.0,
+                                            "forward_nan": false,
+                                            "grad_in_nan": false,
+                                            "grad_out_nan": false,
+                                            "total_memory": 0.002048,
+                                            "forward_latency": 0.0,
+                                            "backward_latency": 0.0
+                                        },
+                                        "children": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "1": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "num_parameters": 295424,
+                            "num_learnable_parameters": 295424,
+                            "param_memory_usage": 1.181696,
+                            "gradient_memory_usage": 1.181696,
+                            "input_memory_usage": [
+                                0.401408
+                            ],
+                            "output_memory_usage": [
+                                0.401408
+                            ],
+                            "effective_additional_memory_fwd": 2.62144,
+                            "effective_additional_memory_bwd": 0.0,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 2.7648,
+                            "forward_latency": 9.974241256713867,
+                            "backward_latency": 27.348995208740234
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "num_parameters": 147456,
+                                    "num_learnable_parameters": 147456,
+                                    "param_memory_usage": 0.589824,
+                                    "gradient_memory_usage": 0.589824,
+                                    "input_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "output_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "effective_additional_memory_fwd": 0.524288,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.581056,
+                                    "forward_latency": 0.9620189666748047,
+                                    "backward_latency": 2.2907257080078125
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 256,
+                                    "num_learnable_parameters": 256,
+                                    "param_memory_usage": 0.001024,
+                                    "gradient_memory_usage": 0.001024,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.002048,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "num_parameters": 147456,
+                                    "num_learnable_parameters": 147456,
+                                    "param_memory_usage": 0.589824,
+                                    "gradient_memory_usage": 0.589824,
+                                    "input_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "output_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.581056,
+                                    "forward_latency": 1.0328292846679688,
+                                    "backward_latency": 3.1790733337402344
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 256,
+                                    "num_learnable_parameters": 256,
+                                    "param_memory_usage": 0.001024,
+                                    "gradient_memory_usage": 0.001024,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.002048,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "layer3": {
+                "info": {
+                    "type": "Sequential",
+                    "input_shapes": [
+                        [
+                            1,
+                            128,
+                            28,
+                            28
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            256,
+                            14,
+                            14
+                        ]
+                    ],
+                    "grad_in_shape": [
+                        [
+                            1,
+                            128,
+                            28,
+                            28
+                        ]
+                    ],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            256,
+                            14,
+                            14
+                        ]
+                    ],
+                    "num_parameters": 2099712,
+                    "num_learnable_parameters": 2099712,
+                    "param_memory_usage": 8.398848,
+                    "gradient_memory_usage": 8.398848,
+                    "input_memory_usage": [
+                        0.401408
+                    ],
+                    "output_memory_usage": [
+                        0.200704
+                    ],
+                    "effective_additional_memory_fwd": 31.195136,
+                    "effective_additional_memory_bwd": 7.86432,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 17.199104,
+                    "forward_latency": 65.338134765625,
+                    "backward_latency": 172.05333709716797
+                },
+                "children": {
+                    "0": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    128,
+                                    28,
+                                    28
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "num_parameters": 919040,
+                            "num_learnable_parameters": 919040,
+                            "param_memory_usage": 3.67616,
+                            "gradient_memory_usage": 3.67616,
+                            "input_memory_usage": [
+                                0.401408
+                            ],
+                            "output_memory_usage": [
+                                0.200704
+                            ],
+                            "effective_additional_memory_fwd": 11.010048,
+                            "effective_additional_memory_bwd": 3.93216,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 7.753728,
+                            "forward_latency": 22.514820098876953,
+                            "backward_latency": 55.563926696777344
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "num_parameters": 294912,
+                                    "num_learnable_parameters": 294912,
+                                    "param_memory_usage": 1.179648,
+                                    "gradient_memory_usage": 1.179648,
+                                    "input_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "output_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "effective_additional_memory_fwd": 0.65536,
+                                    "effective_additional_memory_bwd": 0.131072,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 2.760704,
+                                    "forward_latency": 1.0879039764404297,
+                                    "backward_latency": 2.9778480529785156
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 512,
+                                    "num_learnable_parameters": 512,
+                                    "param_memory_usage": 0.002048,
+                                    "gradient_memory_usage": 0.002048,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.004096,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "num_parameters": 589824,
+                                    "num_learnable_parameters": 589824,
+                                    "param_memory_usage": 2.359296,
+                                    "gradient_memory_usage": 2.359296,
+                                    "input_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "output_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "effective_additional_memory_fwd": 1.179648,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 4.919296,
+                                    "forward_latency": 1.3170242309570312,
+                                    "backward_latency": 2.6679039001464844
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 512,
+                                    "num_learnable_parameters": 512,
+                                    "param_memory_usage": 0.002048,
+                                    "gradient_memory_usage": 0.002048,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.004096,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "downsample": {
+                                "info": {
+                                    "type": "Sequential",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            128,
+                                            28,
+                                            28
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "num_parameters": 33280,
+                                    "num_learnable_parameters": 33280,
+                                    "param_memory_usage": 0.13312,
+                                    "gradient_memory_usage": 0.13312,
+                                    "input_memory_usage": [
+                                        0.401408
+                                    ],
+                                    "output_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.524288,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.667648,
+                                    "forward_latency": 1.3475418090820312,
+                                    "backward_latency": 3.6149024963378906
+                                },
+                                "children": {
+                                    "0": {
+                                        "info": {
+                                            "type": "Conv2d",
+                                            "input_shapes": [
+                                                [
+                                                    1,
+                                                    128,
+                                                    28,
+                                                    28
+                                                ]
+                                            ],
+                                            "output_shapes": [
+                                                [
+                                                    1,
+                                                    256,
+                                                    14,
+                                                    14
+                                                ]
+                                            ],
+                                            "grad_in_shape": [
+                                                [
+                                                    1,
+                                                    128,
+                                                    28,
+                                                    28
+                                                ]
+                                            ],
+                                            "grad_out_shape": [
+                                                [
+                                                    1,
+                                                    256,
+                                                    14,
+                                                    14
+                                                ]
+                                            ],
+                                            "num_parameters": 32768,
+                                            "num_learnable_parameters": 32768,
+                                            "param_memory_usage": 0.131072,
+                                            "gradient_memory_usage": 0.131072,
+                                            "input_memory_usage": [
+                                                0.401408
+                                            ],
+                                            "output_memory_usage": [
+                                                0.200704
+                                            ],
+                                            "effective_additional_memory_fwd": 0.0,
+                                            "effective_additional_memory_bwd": 0.262144,
+                                            "forward_nan": false,
+                                            "grad_in_nan": false,
+                                            "grad_out_nan": false,
+                                            "total_memory": 0.663552,
+                                            "forward_latency": 0.6737709045410156,
+                                            "backward_latency": 1.8074512481689453
+                                        },
+                                        "children": {}
+                                    },
+                                    "1": {
+                                        "info": {
+                                            "type": "BatchNorm2d",
+                                            "input_shapes": [],
+                                            "output_shapes": [],
+                                            "grad_in_shape": [],
+                                            "grad_out_shape": [],
+                                            "num_parameters": 512,
+                                            "num_learnable_parameters": 512,
+                                            "param_memory_usage": 0.002048,
+                                            "gradient_memory_usage": 0.002048,
+                                            "input_memory_usage": [],
+                                            "output_memory_usage": [],
+                                            "effective_additional_memory_fwd": 0.0,
+                                            "effective_additional_memory_bwd": 0.0,
+                                            "forward_nan": false,
+                                            "grad_in_nan": false,
+                                            "grad_out_nan": false,
+                                            "total_memory": 0.004096,
+                                            "forward_latency": 0.0,
+                                            "backward_latency": 0.0
+                                        },
+                                        "children": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "1": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "num_parameters": 1180672,
+                            "num_learnable_parameters": 1180672,
+                            "param_memory_usage": 4.722688,
+                            "gradient_memory_usage": 4.722688,
+                            "input_memory_usage": [
+                                0.200704
+                            ],
+                            "output_memory_usage": [
+                                0.200704
+                            ],
+                            "effective_additional_memory_fwd": 4.58752,
+                            "effective_additional_memory_bwd": 0.0,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 9.64608,
+                            "forward_latency": 10.154247283935547,
+                            "backward_latency": 30.46274185180664
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "num_parameters": 589824,
+                                    "num_learnable_parameters": 589824,
+                                    "param_memory_usage": 2.359296,
+                                    "gradient_memory_usage": 2.359296,
+                                    "input_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "output_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "effective_additional_memory_fwd": 0.524288,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 4.919296,
+                                    "forward_latency": 0.995635986328125,
+                                    "backward_latency": 2.3348331451416016
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 512,
+                                    "num_learnable_parameters": 512,
+                                    "param_memory_usage": 0.002048,
+                                    "gradient_memory_usage": 0.002048,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.004096,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "num_parameters": 589824,
+                                    "num_learnable_parameters": 589824,
+                                    "param_memory_usage": 2.359296,
+                                    "gradient_memory_usage": 2.359296,
+                                    "input_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "output_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "effective_additional_memory_fwd": 0.393216,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 4.919296,
+                                    "forward_latency": 1.0352134704589844,
+                                    "backward_latency": 3.7577152252197266
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 512,
+                                    "num_learnable_parameters": 512,
+                                    "param_memory_usage": 0.002048,
+                                    "gradient_memory_usage": 0.002048,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.004096,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "layer4": {
+                "info": {
+                    "type": "Sequential",
+                    "input_shapes": [
+                        [
+                            1,
+                            256,
+                            14,
+                            14
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            512,
+                            7,
+                            7
+                        ]
+                    ],
+                    "grad_in_shape": [
+                        [
+                            1,
+                            256,
+                            14,
+                            14
+                        ]
+                    ],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            512,
+                            7,
+                            7
+                        ]
+                    ],
+                    "num_parameters": 8393728,
+                    "num_learnable_parameters": 8393728,
+                    "param_memory_usage": 33.574912,
+                    "gradient_memory_usage": 33.574912,
+                    "input_memory_usage": [
+                        0.200704
+                    ],
+                    "output_memory_usage": [
+                        0.100352
+                    ],
+                    "effective_additional_memory_fwd": 96.206848,
+                    "effective_additional_memory_bwd": 670.826496,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 67.350528,
+                    "forward_latency": 87.61978149414062,
+                    "backward_latency": 325.75273513793945
+                },
+                "children": {
+                    "0": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    512,
+                                    7,
+                                    7
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    256,
+                                    14,
+                                    14
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    512,
+                                    7,
+                                    7
+                                ]
+                            ],
+                            "num_parameters": 3673088,
+                            "num_learnable_parameters": 3673088,
+                            "param_memory_usage": 14.692352,
+                            "gradient_memory_usage": 14.692352,
+                            "input_memory_usage": [
+                                0.200704
+                            ],
+                            "output_memory_usage": [
+                                0.100352
+                            ],
+                            "effective_additional_memory_fwd": 44.826624,
+                            "effective_additional_memory_bwd": 128.974848,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 29.585408,
+                            "forward_latency": 29.013633728027344,
+                            "backward_latency": 98.98138046264648
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "num_parameters": 1179648,
+                                    "num_learnable_parameters": 1179648,
+                                    "param_memory_usage": 4.718592,
+                                    "gradient_memory_usage": 4.718592,
+                                    "input_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "output_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "effective_additional_memory_fwd": 2.752512,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 9.637888,
+                                    "forward_latency": 1.3163089752197266,
+                                    "backward_latency": 3.8924217224121094
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 1024,
+                                    "num_learnable_parameters": 1024,
+                                    "param_memory_usage": 0.004096,
+                                    "gradient_memory_usage": 0.004096,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.008192,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "num_parameters": 2359296,
+                                    "num_learnable_parameters": 2359296,
+                                    "param_memory_usage": 9.437184,
+                                    "gradient_memory_usage": 9.437184,
+                                    "input_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "output_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "effective_additional_memory_fwd": 4.718592,
+                                    "effective_additional_memory_bwd": 18.874368,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 18.97472,
+                                    "forward_latency": 1.9786357879638672,
+                                    "backward_latency": 7.545709609985352
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 1024,
+                                    "num_learnable_parameters": 1024,
+                                    "param_memory_usage": 0.004096,
+                                    "gradient_memory_usage": 0.004096,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.008192,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "downsample": {
+                                "info": {
+                                    "type": "Sequential",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            256,
+                                            14,
+                                            14
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "num_parameters": 132096,
+                                    "num_learnable_parameters": 132096,
+                                    "param_memory_usage": 0.528384,
+                                    "gradient_memory_usage": 0.528384,
+                                    "input_memory_usage": [
+                                        0.200704
+                                    ],
+                                    "output_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 2.62144,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 1.257472,
+                                    "forward_latency": 1.5406608581542969,
+                                    "backward_latency": 5.058765411376953
+                                },
+                                "children": {
+                                    "0": {
+                                        "info": {
+                                            "type": "Conv2d",
+                                            "input_shapes": [
+                                                [
+                                                    1,
+                                                    256,
+                                                    14,
+                                                    14
+                                                ]
+                                            ],
+                                            "output_shapes": [
+                                                [
+                                                    1,
+                                                    512,
+                                                    7,
+                                                    7
+                                                ]
+                                            ],
+                                            "grad_in_shape": [
+                                                [
+                                                    1,
+                                                    256,
+                                                    14,
+                                                    14
+                                                ]
+                                            ],
+                                            "grad_out_shape": [
+                                                [
+                                                    1,
+                                                    512,
+                                                    7,
+                                                    7
+                                                ]
+                                            ],
+                                            "num_parameters": 131072,
+                                            "num_learnable_parameters": 131072,
+                                            "param_memory_usage": 0.524288,
+                                            "gradient_memory_usage": 0.524288,
+                                            "input_memory_usage": [
+                                                0.200704
+                                            ],
+                                            "output_memory_usage": [
+                                                0.100352
+                                            ],
+                                            "effective_additional_memory_fwd": 0.0,
+                                            "effective_additional_memory_bwd": 1.31072,
+                                            "forward_nan": false,
+                                            "grad_in_nan": false,
+                                            "grad_out_nan": false,
+                                            "total_memory": 1.24928,
+                                            "forward_latency": 0.7703304290771484,
+                                            "backward_latency": 2.5293827056884766
+                                        },
+                                        "children": {}
+                                    },
+                                    "1": {
+                                        "info": {
+                                            "type": "BatchNorm2d",
+                                            "input_shapes": [],
+                                            "output_shapes": [],
+                                            "grad_in_shape": [],
+                                            "grad_out_shape": [],
+                                            "num_parameters": 1024,
+                                            "num_learnable_parameters": 1024,
+                                            "param_memory_usage": 0.004096,
+                                            "gradient_memory_usage": 0.004096,
+                                            "input_memory_usage": [],
+                                            "output_memory_usage": [],
+                                            "effective_additional_memory_fwd": 0.0,
+                                            "effective_additional_memory_bwd": 0.0,
+                                            "forward_nan": false,
+                                            "grad_in_nan": false,
+                                            "grad_out_nan": false,
+                                            "total_memory": 0.008192,
+                                            "forward_latency": 0.0,
+                                            "backward_latency": 0.0
+                                        },
+                                        "children": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "1": {
+                        "info": {
+                            "type": "BasicBlock",
+                            "input_shapes": [
+                                [
+                                    1,
+                                    512,
+                                    7,
+                                    7
+                                ]
+                            ],
+                            "output_shapes": [
+                                [
+                                    1,
+                                    512,
+                                    7,
+                                    7
+                                ]
+                            ],
+                            "grad_in_shape": [
+                                [
+                                    1,
+                                    512,
+                                    7,
+                                    7
+                                ]
+                            ],
+                            "grad_out_shape": [
+                                [
+                                    1,
+                                    512,
+                                    7,
+                                    7
+                                ]
+                            ],
+                            "num_parameters": 4720640,
+                            "num_learnable_parameters": 4720640,
+                            "param_memory_usage": 18.88256,
+                            "gradient_memory_usage": 18.88256,
+                            "input_memory_usage": [
+                                0.100352
+                            ],
+                            "output_memory_usage": [
+                                0.100352
+                            ],
+                            "effective_additional_memory_fwd": 3.2768,
+                            "effective_additional_memory_bwd": 206.4384,
+                            "forward_nan": false,
+                            "grad_in_nan": false,
+                            "grad_out_nan": false,
+                            "total_memory": 37.865472,
+                            "forward_latency": 14.796257019042969,
+                            "backward_latency": 63.89498710632324
+                        },
+                        "children": {
+                            "conv1": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "num_parameters": 2359296,
+                                    "num_learnable_parameters": 2359296,
+                                    "param_memory_usage": 9.437184,
+                                    "gradient_memory_usage": 9.437184,
+                                    "input_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "output_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "effective_additional_memory_fwd": 0.524288,
+                                    "effective_additional_memory_bwd": 18.874368,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 18.97472,
+                                    "forward_latency": 1.4812946319580078,
+                                    "backward_latency": 5.396604537963867
+                                },
+                                "children": {}
+                            },
+                            "bn1": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 1024,
+                                    "num_learnable_parameters": 1024,
+                                    "param_memory_usage": 0.004096,
+                                    "gradient_memory_usage": 0.004096,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.008192,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "relu": {
+                                "info": {
+                                    "type": "ReLU",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 0,
+                                    "num_learnable_parameters": 0,
+                                    "param_memory_usage": 0.0,
+                                    "gradient_memory_usage": 0.0,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.0,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            },
+                            "conv2": {
+                                "info": {
+                                    "type": "Conv2d",
+                                    "input_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "output_shapes": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_in_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "grad_out_shape": [
+                                        [
+                                            1,
+                                            512,
+                                            7,
+                                            7
+                                        ]
+                                    ],
+                                    "num_parameters": 2359296,
+                                    "num_learnable_parameters": 2359296,
+                                    "param_memory_usage": 9.437184,
+                                    "gradient_memory_usage": 9.437184,
+                                    "input_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "output_memory_usage": [
+                                        0.100352
+                                    ],
+                                    "effective_additional_memory_fwd": 0.131072,
+                                    "effective_additional_memory_bwd": 22.413312,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 18.97472,
+                                    "forward_latency": 1.477956771850586,
+                                    "backward_latency": 7.382392883300781
+                                },
+                                "children": {}
+                            },
+                            "bn2": {
+                                "info": {
+                                    "type": "BatchNorm2d",
+                                    "input_shapes": [],
+                                    "output_shapes": [],
+                                    "grad_in_shape": [],
+                                    "grad_out_shape": [],
+                                    "num_parameters": 1024,
+                                    "num_learnable_parameters": 1024,
+                                    "param_memory_usage": 0.004096,
+                                    "gradient_memory_usage": 0.004096,
+                                    "input_memory_usage": [],
+                                    "output_memory_usage": [],
+                                    "effective_additional_memory_fwd": 0.0,
+                                    "effective_additional_memory_bwd": 0.0,
+                                    "forward_nan": false,
+                                    "grad_in_nan": false,
+                                    "grad_out_nan": false,
+                                    "total_memory": 0.008192,
+                                    "forward_latency": 0.0,
+                                    "backward_latency": 0.0
+                                },
+                                "children": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "avgpool": {
+                "info": {
+                    "type": "AdaptiveAvgPool2d",
+                    "input_shapes": [
+                        [
+                            1,
+                            512,
+                            7,
+                            7
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            512,
+                            1,
+                            1
+                        ]
+                    ],
+                    "grad_in_shape": [
+                        [
+                            1,
+                            512,
+                            7,
+                            7
+                        ]
+                    ],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            512,
+                            1,
+                            1
+                        ]
+                    ],
+                    "num_parameters": 0,
+                    "num_learnable_parameters": 0,
+                    "param_memory_usage": 0.0,
+                    "gradient_memory_usage": 0.0,
+                    "input_memory_usage": [
+                        0.100352
+                    ],
+                    "output_memory_usage": [
+                        0.002048
+                    ],
+                    "effective_additional_memory_fwd": 0.65536,
+                    "effective_additional_memory_bwd": 0.0,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 0.100352,
+                    "forward_latency": 0.40912628173828125,
+                    "backward_latency": 0.6110668182373047
+                },
+                "children": {}
+            },
+            "fc": {
+                "info": {
+                    "type": "Linear",
+                    "input_shapes": [
+                        [
+                            1,
+                            512
+                        ]
+                    ],
+                    "output_shapes": [
+                        [
+                            1,
+                            1000
+                        ]
+                    ],
+                    "grad_in_shape": [
+                        [
+                            1,
+                            512
+                        ]
+                    ],
+                    "grad_out_shape": [
+                        [
+                            1,
+                            1000
+                        ]
+                    ],
+                    "num_parameters": 513000,
+                    "num_learnable_parameters": 513000,
+                    "param_memory_usage": 2.052,
+                    "gradient_memory_usage": 2.052,
+                    "input_memory_usage": [
+                        0.002048
+                    ],
+                    "output_memory_usage": [
+                        0.004
+                    ],
+                    "effective_additional_memory_fwd": 0.524288,
+                    "effective_additional_memory_bwd": 0.786432,
+                    "forward_nan": false,
+                    "grad_in_nan": false,
+                    "grad_out_nan": false,
+                    "total_memory": 4.106048,
+                    "forward_latency": 0.5323886871337891,
+                    "backward_latency": 1.5261173248291016
+                },
+                "children": {}
+            }
+        }
+    }
+}
